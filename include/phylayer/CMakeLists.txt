@@ -23,5 +23,5 @@
 ########################################################################
 install(FILES
     api.h
-    DESTINATION include/phylayer
+    phy_transmitter.h DESTINATION include/phylayer
 )

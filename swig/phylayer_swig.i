@@ -8,6 +8,9 @@
 %include "phylayer_swig_doc.i"
 
 %{
+#include "phylayer/phy_transmitter.h"
 %}
 
 
+%include "phylayer/phy_transmitter.h"
+GR_SWIG_BLOCK_MAGIC2(phylayer, phy_transmitter);

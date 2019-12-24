@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classgr_1_1phylayer_1_1phy__transmitter" kind="class"><name>gr::phylayer::phy_transmitter</name>
+    <member refid="classgr_1_1phylayer_1_1phy__transmitter_1ad6f5b116b996069ac523049b83a5070b" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1phylayer_1_1phy__transmitter_1a8277cd0b4d435253812e09a39c2c7e71" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1phylayer" kind="namespace"><name>gr::phylayer</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1af3921683197daca728f07c65d05a84dc" kind="define"><name>PHYLAYER_API</name></member>
+  </compound>
+  <compound refid="phy__transmitter_8h" kind="file"><name>phy_transmitter.h</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_92b350252c995d378d63300b145b7960" kind="dir"><name>phylayer</name>
+  </compound>
+</doxygenindex>

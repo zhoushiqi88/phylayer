@@ -27,6 +27,7 @@ include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
 
 list(APPEND phylayer_sources
+    phy_transmitter_impl.cc
 )
 
 set(phylayer_sources "${phylayer_sources}" PARENT_SCOPE)
