@@ -82,6 +82,7 @@ swig/phylayer_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/gr_ctrlport.
 swig/phylayer_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/msg_queue.i
 swig/phylayer_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/buffer.i
 swig/phylayer_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/gr_swig_block_magic.i
+swig/phylayer_swig_swig_2d0df.cpp: swig/phylayer_swig_doc.i
 swig/phylayer_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/hier_block2.i
 swig/phylayer_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/runtime_swig_doc.i
 swig/phylayer_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/feval.i
@@ -91,14 +92,23 @@ swig/phylayer_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/prefs.i
 swig/phylayer_swig_swig_2d0df.cpp: swig/phylayer_swig.tag
 	cd /home/zhou/src/gr-phylayer/build/swig && /usr/local/bin/cmake -E copy /home/zhou/src/gr-phylayer/build/swig/phylayer_swig_swig_2d0df.cpp.in /home/zhou/src/gr-phylayer/build/swig/phylayer_swig_swig_2d0df.cpp
 
+swig/phylayer_swig_doc.i: swig/phylayer_swig_doc_swig_docs/xml/index.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zhou/src/gr-phylayer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating python docstrings for phylayer_swig_doc"
+	cd /home/zhou/src/gr-phylayer/docs/doxygen && /usr/bin/python2 -B /home/zhou/src/gr-phylayer/docs/doxygen/swig_doc.py /home/zhou/src/gr-phylayer/build/swig/phylayer_swig_doc_swig_docs/xml /home/zhou/src/gr-phylayer/build/swig/phylayer_swig_doc.i
+
 swig/phylayer_swig.tag: swig/_phylayer_swig_swig_tag
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zhou/src/gr-phylayer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating phylayer_swig.tag"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zhou/src/gr-phylayer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating phylayer_swig.tag"
 	cd /home/zhou/src/gr-phylayer/build/swig && ./_phylayer_swig_swig_tag
 	cd /home/zhou/src/gr-phylayer/build/swig && /usr/local/bin/cmake -E touch /home/zhou/src/gr-phylayer/build/swig/phylayer_swig.tag
 
+swig/phylayer_swig_doc_swig_docs/xml/index.xml: swig/_phylayer_swig_doc_tag
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zhou/src/gr-phylayer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating doxygen xml for phylayer_swig_doc docs"
+	cd /home/zhou/src/gr-phylayer/build/swig && ./_phylayer_swig_doc_tag
+	cd /home/zhou/src/gr-phylayer/build/swig && /usr/bin/doxygen /home/zhou/src/gr-phylayer/build/swig/phylayer_swig_doc_swig_docs/Doxyfile
+
 swig/CMakeFiles/phylayer_swig_swig_2d0df.dir/phylayer_swig_swig_2d0df.cpp.o: swig/CMakeFiles/phylayer_swig_swig_2d0df.dir/flags.make
 swig/CMakeFiles/phylayer_swig_swig_2d0df.dir/phylayer_swig_swig_2d0df.cpp.o: swig/phylayer_swig_swig_2d0df.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhou/src/gr-phylayer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object swig/CMakeFiles/phylayer_swig_swig_2d0df.dir/phylayer_swig_swig_2d0df.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhou/src/gr-phylayer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object swig/CMakeFiles/phylayer_swig_swig_2d0df.dir/phylayer_swig_swig_2d0df.cpp.o"
 	cd /home/zhou/src/gr-phylayer/build/swig && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phylayer_swig_swig_2d0df.dir/phylayer_swig_swig_2d0df.cpp.o -c /home/zhou/src/gr-phylayer/build/swig/phylayer_swig_swig_2d0df.cpp
 
 swig/CMakeFiles/phylayer_swig_swig_2d0df.dir/phylayer_swig_swig_2d0df.cpp.i: cmake_force
@@ -130,7 +140,7 @@ phylayer_swig_swig_2d0df_EXTERNAL_OBJECTS =
 swig/phylayer_swig_swig_2d0df: swig/CMakeFiles/phylayer_swig_swig_2d0df.dir/phylayer_swig_swig_2d0df.cpp.o
 swig/phylayer_swig_swig_2d0df: swig/CMakeFiles/phylayer_swig_swig_2d0df.dir/build.make
 swig/phylayer_swig_swig_2d0df: swig/CMakeFiles/phylayer_swig_swig_2d0df.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhou/src/gr-phylayer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable phylayer_swig_swig_2d0df"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhou/src/gr-phylayer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable phylayer_swig_swig_2d0df"
 	cd /home/zhou/src/gr-phylayer/build/swig && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/phylayer_swig_swig_2d0df.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Swig source"
 	cd /home/zhou/src/gr-phylayer/build/swig && /usr/local/bin/cmake -E make_directory /home/zhou/src/gr-phylayer/build/swig
@@ -150,7 +160,9 @@ swig/CMakeFiles/phylayer_swig_swig_2d0df.dir/clean:
 .PHONY : swig/CMakeFiles/phylayer_swig_swig_2d0df.dir/clean
 
 swig/CMakeFiles/phylayer_swig_swig_2d0df.dir/depend: swig/phylayer_swig_swig_2d0df.cpp
+swig/CMakeFiles/phylayer_swig_swig_2d0df.dir/depend: swig/phylayer_swig_doc.i
 swig/CMakeFiles/phylayer_swig_swig_2d0df.dir/depend: swig/phylayer_swig.tag
+swig/CMakeFiles/phylayer_swig_swig_2d0df.dir/depend: swig/phylayer_swig_doc_swig_docs/xml/index.xml
 	cd /home/zhou/src/gr-phylayer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhou/src/gr-phylayer /home/zhou/src/gr-phylayer/swig /home/zhou/src/gr-phylayer/build /home/zhou/src/gr-phylayer/build/swig /home/zhou/src/gr-phylayer/build/swig/CMakeFiles/phylayer_swig_swig_2d0df.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : swig/CMakeFiles/phylayer_swig_swig_2d0df.dir/depend
 

@@ -48,7 +48,7 @@ set(VERSION_INFO_MINOR_VERSION 0)
 set(VERSION_INFO_MAINT_VERSION git)
 
 # Set cmake policies.
-# This will suppress developer warnings during the cmake process that can occur
+# This will suppress developer warnings durinfun::transmitter tx;g the cmake process that can occur
 # if a newer cmake version than the minimum is used.
 
 if(POLICY CMP0026)
@@ -71,6 +71,8 @@ if(CMAKE_COMPILER_IS_GNUCXX AND NOT WIN32)
     #http://gcc.gnu.org/wiki/Visibility
     add_definitions(-fvisibility=hidden)
 endif()
+set(CMAKE_CXX_FLAGS "-m64 -std=c++11 -mssse3 -msse4.1")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
 
 ########################################################################
 # Find boost
@@ -87,7 +89,7 @@ set(Boost_ADDITIONAL_VERSIONS
     "1.60.0" "1.60" "1.61.0" "1.61" "1.62.0" "1.62" "1.63.0" "1.63" "1.64.0" "1.64"
     "1.65.0" "1.65" "1.66.0" "1.66" "1.67.0" "1.67" "1.68.0" "1.68" "1.69.0" "1.69"
 )
-find_package(Boost "1.35" COMPONENTS filesystem system)
+find_package(Boost "1.58" COMPONENTS filesystem system)
 
 if(NOT Boost_FOUND)
     message(FATAL_ERROR "Boost required to compile phylayer")
@@ -175,6 +177,7 @@ link_directories(
     ${Boost_LIBRARY_DIRS}
     ${CPPUNIT_LIBRARY_DIRS}
     ${GNURADIO_RUNTIME_LIBRARY_DIRS}
+
 )
 
 # Set component parameters

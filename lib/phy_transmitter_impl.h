@@ -22,7 +22,7 @@
 #define INCLUDED_PHYLAYER_PHY_TRANSMITTER_IMPL_H
 
 #include <phylayer/phy_transmitter.h>
-
+#include<fun_ofdm/transmitter.h>
 namespace gr {
   namespace phylayer {
 
@@ -30,7 +30,6 @@ namespace gr {
     {
      private:
       // Nothing to declare in this block.
-
      public:
       phy_transmitter_impl();
       ~phy_transmitter_impl();

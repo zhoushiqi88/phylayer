@@ -6,6 +6,11 @@ lib/CMakeFiles/gnuradio-phylayer.dir/phy_transmitter_impl.cc.o
  ../include/phylayer/phy_transmitter.h
  /home/zhou/src/gr-phylayer/lib/phy_transmitter_impl.cc
  /home/zhou/src/gr-phylayer/lib/phy_transmitter_impl.h
+ /usr/local/include/fun_ofdm/fft.h
+ /usr/local/include/fun_ofdm/frame_builder.h
+ /usr/local/include/fun_ofdm/rates.h
+ /usr/local/include/fun_ofdm/transmitter.h
+ /usr/local/include/fun_ofdm/usrp.h
  /usr/local/include/gnuradio/api.h
  /usr/local/include/gnuradio/attributes.h
  /usr/local/include/gnuradio/basic_block.h
@@ -35,3 +40,34 @@ lib/CMakeFiles/gnuradio-phylayer.dir/phy_transmitter_impl.cc.o
  /usr/local/include/pmt/api.h
  /usr/local/include/pmt/pmt.h
  /usr/local/include/pmt/pmt_sugar.h
+ /usr/local/include/uhd/config.hpp
+ /usr/local/include/uhd/convert.hpp
+ /usr/local/include/uhd/deprecated.hpp
+ /usr/local/include/uhd/device.hpp
+ /usr/local/include/uhd/exception.hpp
+ /usr/local/include/uhd/property_tree.hpp
+ /usr/local/include/uhd/property_tree.ipp
+ /usr/local/include/uhd/stream.hpp
+ /usr/local/include/uhd/types/clock_config.hpp
+ /usr/local/include/uhd/types/device_addr.hpp
+ /usr/local/include/uhd/types/dict.hpp
+ /usr/local/include/uhd/types/dict.ipp
+ /usr/local/include/uhd/types/filters.hpp
+ /usr/local/include/uhd/types/io_type.hpp
+ /usr/local/include/uhd/types/metadata.hpp
+ /usr/local/include/uhd/types/ranges.hpp
+ /usr/local/include/uhd/types/ref_vector.hpp
+ /usr/local/include/uhd/types/sensors.hpp
+ /usr/local/include/uhd/types/serial.hpp
+ /usr/local/include/uhd/types/stream_cmd.hpp
+ /usr/local/include/uhd/types/time_spec.hpp
+ /usr/local/include/uhd/types/tune_request.hpp
+ /usr/local/include/uhd/types/tune_result.hpp
+ /usr/local/include/uhd/types/wb_iface.hpp
+ /usr/local/include/uhd/usrp/dboard_iface.hpp
+ /usr/local/include/uhd/usrp/fe_connection.hpp
+ /usr/local/include/uhd/usrp/gpio_defs.hpp
+ /usr/local/include/uhd/usrp/multi_usrp.hpp
+ /usr/local/include/uhd/usrp/subdev_spec.hpp
+ /usr/local/include/uhd/utils/log.hpp
+ /usr/local/include/uhd/utils/pimpl.hpp

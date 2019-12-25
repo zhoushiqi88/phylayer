@@ -57,6 +57,12 @@ namespace gr {
 
     void phy_transmitter_impl::handle_fun(pmt::pmt_t msg) {
       std::cout << "handlefun" << std::endl;
+      double freq = 5.72e9;
+      double sample_rate = 5e6;
+      double tx_gain = 30;
+      double amp = 0.5;
+
+      fun::transmitter tx(freq,sample_rate,tx_gain,amp);
     }
 
    

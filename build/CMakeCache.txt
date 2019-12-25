@@ -272,7 +272,7 @@ SWIG_VERSION:STRING=3.0.8
 _phylayer_swig_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;gnuradio-phylayer;
 
 //Dependencies for the target
-gnuradio-phylayer_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/local/lib/libgnuradio-runtime.so;general;/usr/local/lib/libgnuradio-pmt.so;
+gnuradio-phylayer_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/local/lib/libgnuradio-runtime.so;general;/usr/local/lib/libgnuradio-pmt.so;general;fun_ofdm;
 
 //Value Computed by CMake
 gr-phylayer_BINARY_DIR:STATIC=/home/zhou/src/gr-phylayer/build

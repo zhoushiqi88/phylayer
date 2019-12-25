@@ -23,8 +23,14 @@
 ########################################################################
 include(GrPlatform) #define LIB_SUFFIX
 
-include_directories(${Boost_INCLUDE_DIR})
-link_directories(${Boost_LIBRARY_DIRS})
+include_directories(
+    ${Boost_INCLUDE_DIR}
+    /usr/local/include
+)
+link_directories(
+    ${Boost_LIBRARY_DIRS}
+    /usr/local/lib
+)
 
 list(APPEND phylayer_sources
     phy_transmitter_impl.cc
@@ -37,7 +43,7 @@ if(NOT phylayer_sources)
 endif(NOT phylayer_sources)
 
 add_library(gnuradio-phylayer SHARED ${phylayer_sources})
-target_link_libraries(gnuradio-phylayer ${Boost_LIBRARIES} ${GNURADIO_ALL_LIBRARIES})
+target_link_libraries(gnuradio-phylayer ${Boost_LIBRARIES} ${GNURADIO_ALL_LIBRARIES} fun_ofdm)
 set_target_properties(gnuradio-phylayer PROPERTIES DEFINE_SYMBOL "gnuradio_phylayer_EXPORTS")
 
 if(APPLE)
