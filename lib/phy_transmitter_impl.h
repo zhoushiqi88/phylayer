@@ -30,8 +30,13 @@ namespace gr {
     {
      private:
       // Nothing to declare in this block.
+      double _freq;
+      double _sample_rate;
+      double _tx_gain;
+
+      fun::transmitter tx;
      public:
-      phy_transmitter_impl();
+      phy_transmitter_impl(double freq,double sample_rate,double tx_gain);
       ~phy_transmitter_impl();
 
       // Where all the action really happens

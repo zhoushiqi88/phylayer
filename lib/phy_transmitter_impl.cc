@@ -29,19 +29,20 @@ namespace gr {
   namespace phylayer {
 
     phy_transmitter::sptr
-    phy_transmitter::make()
+    phy_transmitter::make(double freq,double sample_rate,double tx_gain)
     {
       return gnuradio::get_initial_sptr
-        (new phy_transmitter_impl());
+        (new phy_transmitter_impl(freq,sample_rate,tx_gain));
     }
 
     /*
      * The private constructor
      */
-    phy_transmitter_impl::phy_transmitter_impl()
+    phy_transmitter_impl::phy_transmitter_impl(double freq,double sample_rate,double tx_gain)
       : gr::block("phy_transmitter",
               gr::io_signature::make(0,0,0),
-              gr::io_signature::make(0,0,0))
+              gr::io_signature::make(0,0,0)),
+              _freq(freq),_sample_rate(sample_rate),_tx_gain(tx_gain),tx(_freq,_sample_rate,_tx_gain,0.5)
     {
       message_port_register_in(pmt::mp("in"));
       
@@ -57,12 +58,7 @@ namespace gr {
 
     void phy_transmitter_impl::handle_fun(pmt::pmt_t msg) {
       std::cout << "handlefun" << std::endl;
-      double freq = 5.72e9;
-      double sample_rate = 5e6;
-      double tx_gain = 30;
-      double amp = 0.5;
 
-      fun::transmitter tx(freq,sample_rate,tx_gain,amp);
     }
 
    

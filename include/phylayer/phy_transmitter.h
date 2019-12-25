@@ -46,7 +46,7 @@ namespace gr {
        * class. phylayer::phy_transmitter::make is the public interface for
        * creating new instances.
        */
-      static sptr make();
+      static sptr make(double freq,double sample_rate,double tx_gain);
     };
 
   } // namespace phylayer

@@ -20,15 +20,27 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="classgr_1_1phylayer_1_1phy__transmitter_1a8277cd0b4d435253812e09a39c2c7e71" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classgr_1_1phylayer_1_1phy__transmitter_1a4a1ce8c5cfa1006199a8495046d5a1c3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classgr_1_1phylayer_1_1phy__transmitter_1ad6f5b116b996069ac523049b83a5070b" kindref="member">sptr</ref></type>
         <definition>static sptr gr::phylayer::phy_transmitter::make</definition>
-        <argsstring>()</argsstring>
+        <argsstring>(double freq, double sample_rate, double tx_gain)</argsstring>
         <name>make</name>
+        <param>
+          <type>double</type>
+          <declname>freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sample_rate</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>tx_gain</declname>
+        </param>
         <briefdescription>
 <para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1phylayer_1_1phy__transmitter" kindref="compound">phylayer::phy_transmitter</ref>. </para>        </briefdescription>
         <detaileddescription>
-<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1phylayer_1_1phy__transmitter" kindref="compound">phylayer::phy_transmitter</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1phylayer_1_1phy__transmitter_1a8277cd0b4d435253812e09a39c2c7e71" kindref="member">phylayer::phy_transmitter::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1phylayer_1_1phy__transmitter" kindref="compound">phylayer::phy_transmitter</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1phylayer_1_1phy__transmitter_1a4a1ce8c5cfa1006199a8495046d5a1c3" kindref="member">phylayer::phy_transmitter::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/home/zhou/src/gr-phylayer/include/phylayer/phy_transmitter.h" line="49" column="1"/>
@@ -62,7 +74,7 @@
     </collaborationgraph>
     <location file="/home/zhou/src/gr-phylayer/include/phylayer/phy_transmitter.h" line="37" column="1" bodyfile="/home/zhou/src/gr-phylayer/include/phylayer/phy_transmitter.h" bodystart="36" bodyend="50"/>
     <listofallmembers>
-      <member refid="classgr_1_1phylayer_1_1phy__transmitter_1a8277cd0b4d435253812e09a39c2c7e71" prot="public" virt="non-virtual"><scope>gr::phylayer::phy_transmitter</scope><name>make</name></member>
+      <member refid="classgr_1_1phylayer_1_1phy__transmitter_1a4a1ce8c5cfa1006199a8495046d5a1c3" prot="public" virt="non-virtual"><scope>gr::phylayer::phy_transmitter</scope><name>make</name></member>
       <member refid="classgr_1_1phylayer_1_1phy__transmitter_1ad6f5b116b996069ac523049b83a5070b" prot="public" virt="non-virtual"><scope>gr::phylayer::phy_transmitter</scope><name>sptr</name></member>
     </listofallmembers>
   </compounddef>

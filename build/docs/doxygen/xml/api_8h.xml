@@ -3,6 +3,7 @@
   <compounddef id="api_8h" kind="file" language="C++">
     <compoundname>api.h</compoundname>
     <includes local="no">gnuradio/attributes.h</includes>
+    <includedby refid="phy__transmitter_8h" local="no">phy_transmitter.h</includedby>
     <incdepgraph>
       <node id="1">
         <label>gnuradio/attributes.h</label>
@@ -14,6 +15,24 @@
         </childnode>
       </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>phy_transmitter.h</label>
+        <link refid="phy__transmitter_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>phy_transmitter_impl.h</label>
+        <link refid="phy__transmitter__impl_8h"/>
+      </node>
+      <node id="2">
+        <label>api.h</label>
+        <link refid="api.h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
       <sectiondef kind="define">
       <memberdef kind="define" id="api_8h_1af3921683197daca728f07c65d05a84dc" prot="public" static="no">
         <name>PHYLAYER_API</name>

@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1phylayer_1_1phy__transmitter__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::phylayer::phy_transmitter_impl</compoundname>
+    <basecompoundref refid="classgr_1_1phylayer_1_1phy__transmitter" prot="public" virt="non-virtual">gr::phylayer::phy_transmitter</basecompoundref>
+    <includes refid="phy__transmitter__impl_8h" local="no">phy_transmitter_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1phylayer_1_1phy__transmitter__impl_1a1d5a98734cf4a375c7e99afd1138ca1a" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::phylayer::phy_transmitter_impl::_freq</definition>
+        <argsstring></argsstring>
+        <name>_freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-phylayer/lib/phy_transmitter_impl.h" line="33" column="1" bodyfile="/home/zhou/src/gr-phylayer/lib/phy_transmitter_impl.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1phylayer_1_1phy__transmitter__impl_1a74a43e9d7bc99ccd9bb713604f5e1fa4" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::phylayer::phy_transmitter_impl::_sample_rate</definition>
+        <argsstring></argsstring>
+        <name>_sample_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-phylayer/lib/phy_transmitter_impl.h" line="34" column="1" bodyfile="/home/zhou/src/gr-phylayer/lib/phy_transmitter_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1phylayer_1_1phy__transmitter__impl_1a5bb57fa1c977ca00105b0885444f0e25" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::phylayer::phy_transmitter_impl::_tx_gain</definition>
+        <argsstring></argsstring>
+        <name>_tx_gain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-phylayer/lib/phy_transmitter_impl.h" line="35" column="1" bodyfile="/home/zhou/src/gr-phylayer/lib/phy_transmitter_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1phylayer_1_1phy__transmitter__impl_1adeb360cb5e471a9fc3fc17282bde0c36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::phylayer::phy_transmitter_impl::phy_transmitter_impl</definition>
+        <argsstring>(double freq, double sample_rate, double tx_gain)</argsstring>
+        <name>phy_transmitter_impl</name>
+        <param>
+          <type>double</type>
+          <declname>freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sample_rate</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>tx_gain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-phylayer/lib/phy_transmitter_impl.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1phylayer_1_1phy__transmitter__impl_1acc3b9b79b2a2b3e09190ff7aa7c34731" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::phylayer::phy_transmitter_impl::~phy_transmitter_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~phy_transmitter_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-phylayer/lib/phy_transmitter_impl.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1phylayer_1_1phy__transmitter__impl_1a6b719bfd660abeeff3f81dc02d89da50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::phylayer::phy_transmitter_impl::handle_fun</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>handle_fun</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-phylayer/lib/phy_transmitter_impl.h" line="41" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>gr::phylayer::phy_transmitter_impl</label>
+        <link refid="classgr_1_1phylayer_1_1phy__transmitter__impl"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>gr::phylayer::phy_transmitter</label>
+        <link refid="classgr_1_1phylayer_1_1phy__transmitter"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gr::block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>gr::phylayer::phy_transmitter_impl</label>
+        <link refid="classgr_1_1phylayer_1_1phy__transmitter__impl"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>gr::phylayer::phy_transmitter</label>
+        <link refid="classgr_1_1phylayer_1_1phy__transmitter"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gr::block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/zhou/src/gr-phylayer/lib/phy_transmitter_impl.h" line="30" column="1" bodyfile="/home/zhou/src/gr-phylayer/lib/phy_transmitter_impl.h" bodystart="29" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classgr_1_1phylayer_1_1phy__transmitter__impl_1a1d5a98734cf4a375c7e99afd1138ca1a" prot="private" virt="non-virtual"><scope>gr::phylayer::phy_transmitter_impl</scope><name>_freq</name></member>
+      <member refid="classgr_1_1phylayer_1_1phy__transmitter__impl_1a74a43e9d7bc99ccd9bb713604f5e1fa4" prot="private" virt="non-virtual"><scope>gr::phylayer::phy_transmitter_impl</scope><name>_sample_rate</name></member>
+      <member refid="classgr_1_1phylayer_1_1phy__transmitter__impl_1a5bb57fa1c977ca00105b0885444f0e25" prot="private" virt="non-virtual"><scope>gr::phylayer::phy_transmitter_impl</scope><name>_tx_gain</name></member>
+      <member refid="classgr_1_1phylayer_1_1phy__transmitter__impl_1a6b719bfd660abeeff3f81dc02d89da50" prot="public" virt="non-virtual"><scope>gr::phylayer::phy_transmitter_impl</scope><name>handle_fun</name></member>
+      <member refid="classgr_1_1phylayer_1_1phy__transmitter_1a4a1ce8c5cfa1006199a8495046d5a1c3" prot="public" virt="non-virtual"><scope>gr::phylayer::phy_transmitter_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1phylayer_1_1phy__transmitter__impl_1adeb360cb5e471a9fc3fc17282bde0c36" prot="public" virt="non-virtual"><scope>gr::phylayer::phy_transmitter_impl</scope><name>phy_transmitter_impl</name></member>
+      <member refid="classgr_1_1phylayer_1_1phy__transmitter_1ad6f5b116b996069ac523049b83a5070b" prot="public" virt="non-virtual"><scope>gr::phylayer::phy_transmitter_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1phylayer_1_1phy__transmitter__impl_1acc3b9b79b2a2b3e09190ff7aa7c34731" prot="public" virt="non-virtual"><scope>gr::phylayer::phy_transmitter_impl</scope><name>~phy_transmitter_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

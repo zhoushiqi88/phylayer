@@ -124,6 +124,11 @@ class phy_transmitter(object):
     Return a shared_ptr to a new instance of phylayer::phy_transmitter.
 
     To avoid accidental use of raw pointers, phylayer::phy_transmitter's constructor is in a private implementation class. phylayer::phy_transmitter::make is the public interface for creating new instances.
+
+    Args:
+        freq : 
+        sample_rate : 
+        tx_gain : 
     """
 
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
@@ -132,9 +137,9 @@ class phy_transmitter(object):
         raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
 
-    def make():
+    def make(freq, sample_rate, tx_gain):
         """
-        make() -> phy_transmitter_sptr
+        make(double freq, double sample_rate, double tx_gain) -> phy_transmitter_sptr
 
         <+description of block+>
 
@@ -143,8 +148,13 @@ class phy_transmitter(object):
         Return a shared_ptr to a new instance of phylayer::phy_transmitter.
 
         To avoid accidental use of raw pointers, phylayer::phy_transmitter's constructor is in a private implementation class. phylayer::phy_transmitter::make is the public interface for creating new instances.
+
+        Args:
+            freq : 
+            sample_rate : 
+            tx_gain : 
         """
-        return _phylayer_swig.phy_transmitter_make()
+        return _phylayer_swig.phy_transmitter_make(freq, sample_rate, tx_gain)
 
     make = staticmethod(make)
     __swig_destroy__ = _phylayer_swig.delete_phy_transmitter
@@ -152,9 +162,9 @@ class phy_transmitter(object):
 phy_transmitter_swigregister = _phylayer_swig.phy_transmitter_swigregister
 phy_transmitter_swigregister(phy_transmitter)
 
-def phy_transmitter_make():
+def phy_transmitter_make(freq, sample_rate, tx_gain):
     """
-    phy_transmitter_make() -> phy_transmitter_sptr
+    phy_transmitter_make(double freq, double sample_rate, double tx_gain) -> phy_transmitter_sptr
 
     <+description of block+>
 
@@ -163,8 +173,13 @@ def phy_transmitter_make():
     Return a shared_ptr to a new instance of phylayer::phy_transmitter.
 
     To avoid accidental use of raw pointers, phylayer::phy_transmitter's constructor is in a private implementation class. phylayer::phy_transmitter::make is the public interface for creating new instances.
+
+    Args:
+        freq : 
+        sample_rate : 
+        tx_gain : 
     """
-    return _phylayer_swig.phy_transmitter_make()
+    return _phylayer_swig.phy_transmitter_make(freq, sample_rate, tx_gain)
 
 class phy_transmitter_sptr(object):
     """Proxy of C++ boost::shared_ptr<(gr::phylayer::phy_transmitter)> class."""
@@ -190,9 +205,9 @@ class phy_transmitter_sptr(object):
     __swig_destroy__ = _phylayer_swig.delete_phy_transmitter_sptr
     __del__ = lambda self: None
 
-    def make(self):
+    def make(self, freq, sample_rate, tx_gain):
         """
-        make(phy_transmitter_sptr self) -> phy_transmitter_sptr
+        make(phy_transmitter_sptr self, double freq, double sample_rate, double tx_gain) -> phy_transmitter_sptr
 
         <+description of block+>
 
@@ -201,8 +216,13 @@ class phy_transmitter_sptr(object):
         Return a shared_ptr to a new instance of phylayer::phy_transmitter.
 
         To avoid accidental use of raw pointers, phylayer::phy_transmitter's constructor is in a private implementation class. phylayer::phy_transmitter::make is the public interface for creating new instances.
+
+        Args:
+            freq : 
+            sample_rate : 
+            tx_gain : 
         """
-        return _phylayer_swig.phy_transmitter_sptr_make(self)
+        return _phylayer_swig.phy_transmitter_sptr_make(self, freq, sample_rate, tx_gain)
 
 
     def history(self):

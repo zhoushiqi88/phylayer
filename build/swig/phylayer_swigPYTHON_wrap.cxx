@@ -4370,13 +4370,6 @@ SWIG_From_long_SS_long  (long long value)
 #include "phylayer/phy_transmitter.h"
 
 
-SWIGINTERNINLINE PyObject*
-  SWIG_From_unsigned_SS_int  (unsigned int value)
-{
-  return PyInt_FromSize_t((size_t) value);
-}
-
-
 SWIGINTERN int
 SWIG_AsVal_double (PyObject *obj, double *val)
 {
@@ -4420,6 +4413,13 @@ SWIG_AsVal_double (PyObject *obj, double *val)
   }
 #endif
   return res;
+}
+
+
+SWIGINTERNINLINE PyObject*
+  SWIG_From_unsigned_SS_int  (unsigned int value)
+{
+  return PyInt_FromSize_t((size_t) value);
 }
 
 
@@ -5081,14 +5081,44 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_phy_transmitter_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_phy_transmitter_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
+  double arg1 ;
+  double arg2 ;
+  double arg3 ;
+  double val1 ;
+  int ecode1 = 0 ;
+  double val2 ;
+  int ecode2 = 0 ;
+  double val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  char *  kwnames[] = {
+    (char *) "freq",(char *) "sample_rate",(char *) "tx_gain", NULL 
+  };
   gr::phylayer::phy_transmitter::sptr result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"phy_transmitter_make",0,0)) SWIG_fail;
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOO:phy_transmitter_make",kwnames,&obj0,&obj1,&obj2)) SWIG_fail;
+  ecode1 = SWIG_AsVal_double(obj0, &val1);
+  if (!SWIG_IsOK(ecode1)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "phy_transmitter_make" "', argument " "1"" of type '" "double""'");
+  } 
+  arg1 = static_cast< double >(val1);
+  ecode2 = SWIG_AsVal_double(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "phy_transmitter_make" "', argument " "2"" of type '" "double""'");
+  } 
+  arg2 = static_cast< double >(val2);
+  ecode3 = SWIG_AsVal_double(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "phy_transmitter_make" "', argument " "3"" of type '" "double""'");
+  } 
+  arg3 = static_cast< double >(val3);
   {
     try {
-      result = gr::phylayer::phy_transmitter::make();
+      result = gr::phylayer::phy_transmitter::make(arg1,arg2,arg3);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -5300,23 +5330,53 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_phy_transmitter_sptr_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_phy_transmitter_sptr_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
   boost::shared_ptr< gr::phylayer::phy_transmitter > *arg1 = (boost::shared_ptr< gr::phylayer::phy_transmitter > *) 0 ;
+  double arg2 ;
+  double arg3 ;
+  double arg4 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
+  double val2 ;
+  int ecode2 = 0 ;
+  double val3 ;
+  int ecode3 = 0 ;
+  double val4 ;
+  int ecode4 = 0 ;
   PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  char *  kwnames[] = {
+    (char *) "self",(char *) "freq",(char *) "sample_rate",(char *) "tx_gain", NULL 
+  };
   gr::phylayer::phy_transmitter::sptr result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"phy_transmitter_sptr_make",1,1,&obj0)) SWIG_fail;
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOO:phy_transmitter_sptr_make",kwnames,&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__phylayer__phy_transmitter_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "phy_transmitter_sptr_make" "', argument " "1"" of type '" "boost::shared_ptr< gr::phylayer::phy_transmitter > *""'"); 
   }
   arg1 = reinterpret_cast< boost::shared_ptr< gr::phylayer::phy_transmitter > * >(argp1);
+  ecode2 = SWIG_AsVal_double(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "phy_transmitter_sptr_make" "', argument " "2"" of type '" "double""'");
+  } 
+  arg2 = static_cast< double >(val2);
+  ecode3 = SWIG_AsVal_double(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "phy_transmitter_sptr_make" "', argument " "3"" of type '" "double""'");
+  } 
+  arg3 = static_cast< double >(val3);
+  ecode4 = SWIG_AsVal_double(obj3, &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "phy_transmitter_sptr_make" "', argument " "4"" of type '" "double""'");
+  } 
+  arg4 = static_cast< double >(val4);
   {
     try {
-      result = (*arg1)->make();
+      result = (*arg1)->make(arg2,arg3,arg4);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -8237,8 +8297,8 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"high_res_timer_now_perfmon", _wrap_high_res_timer_now_perfmon, METH_VARARGS, (char *)"high_res_timer_now_perfmon() -> gr::high_res_timer_type"},
 	 { (char *)"high_res_timer_tps", _wrap_high_res_timer_tps, METH_VARARGS, (char *)"high_res_timer_tps() -> gr::high_res_timer_type"},
 	 { (char *)"high_res_timer_epoch", _wrap_high_res_timer_epoch, METH_VARARGS, (char *)"high_res_timer_epoch() -> gr::high_res_timer_type"},
-	 { (char *)"phy_transmitter_make", _wrap_phy_transmitter_make, METH_VARARGS, (char *)"\n"
-		"phy_transmitter_make() -> phy_transmitter_sptr\n"
+	 { (char *)"phy_transmitter_make", (PyCFunction) _wrap_phy_transmitter_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"phy_transmitter_make(double freq, double sample_rate, double tx_gain) -> phy_transmitter_sptr\n"
 		"\n"
 		"<+description of block+>\n"
 		"\n"
@@ -8247,6 +8307,11 @@ static PyMethodDef SwigMethods[] = {
 		"Return a shared_ptr to a new instance of phylayer::phy_transmitter.\n"
 		"\n"
 		"To avoid accidental use of raw pointers, phylayer::phy_transmitter's constructor is in a private implementation class. phylayer::phy_transmitter::make is the public interface for creating new instances.\n"
+		"\n"
+		"Args:\n"
+		"    freq : \n"
+		"    sample_rate : \n"
+		"    tx_gain : \n"
 		""},
 	 { (char *)"delete_phy_transmitter", _wrap_delete_phy_transmitter, METH_VARARGS, (char *)"delete_phy_transmitter(phy_transmitter self)"},
 	 { (char *)"phy_transmitter_swigregister", phy_transmitter_swigregister, METH_VARARGS, NULL},
@@ -8256,8 +8321,8 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"phy_transmitter_sptr___deref__", _wrap_phy_transmitter_sptr___deref__, METH_VARARGS, (char *)"phy_transmitter_sptr___deref__(phy_transmitter_sptr self) -> phy_transmitter"},
 	 { (char *)"delete_phy_transmitter_sptr", _wrap_delete_phy_transmitter_sptr, METH_VARARGS, (char *)"delete_phy_transmitter_sptr(phy_transmitter_sptr self)"},
-	 { (char *)"phy_transmitter_sptr_make", _wrap_phy_transmitter_sptr_make, METH_VARARGS, (char *)"\n"
-		"phy_transmitter_sptr_make(phy_transmitter_sptr self) -> phy_transmitter_sptr\n"
+	 { (char *)"phy_transmitter_sptr_make", (PyCFunction) _wrap_phy_transmitter_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"phy_transmitter_sptr_make(phy_transmitter_sptr self, double freq, double sample_rate, double tx_gain) -> phy_transmitter_sptr\n"
 		"\n"
 		"<+description of block+>\n"
 		"\n"
@@ -8266,6 +8331,11 @@ static PyMethodDef SwigMethods[] = {
 		"Return a shared_ptr to a new instance of phylayer::phy_transmitter.\n"
 		"\n"
 		"To avoid accidental use of raw pointers, phylayer::phy_transmitter's constructor is in a private implementation class. phylayer::phy_transmitter::make is the public interface for creating new instances.\n"
+		"\n"
+		"Args:\n"
+		"    freq : \n"
+		"    sample_rate : \n"
+		"    tx_gain : \n"
 		""},
 	 { (char *)"phy_transmitter_sptr_history", _wrap_phy_transmitter_sptr_history, METH_VARARGS, (char *)"phy_transmitter_sptr_history(phy_transmitter_sptr self) -> unsigned int"},
 	 { (char *)"phy_transmitter_sptr_declare_sample_delay", _wrap_phy_transmitter_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
