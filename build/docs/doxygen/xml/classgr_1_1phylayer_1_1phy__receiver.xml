@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1phylayer_1_1phy__receiver" kind="class" language="C++" prot="public">
+    <compoundname>gr::phylayer::phy_receiver</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1phylayer_1_1phy__receiver__impl" prot="public" virt="non-virtual">gr::phylayer::phy_receiver_impl</derivedcompoundref>
+    <includes refid="phy__receiver_8h" local="no">phy_receiver.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1phylayer_1_1phy__receiver_1ad2df6389fd2d809b703df057a9f1ca4b" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1phylayer_1_1phy__receiver" kindref="compound">phy_receiver</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;phy_receiver&gt; gr::phylayer::phy_receiver::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-phylayer/include/phylayer/phy_receiver.h" line="39" column="1" bodyfile="/home/zhou/src/gr-phylayer/include/phylayer/phy_receiver.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1phylayer_1_1phy__receiver_1a1ce3d36c2277256003211e8563e88300" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1phylayer_1_1phy__receiver_1ad2df6389fd2d809b703df057a9f1ca4b" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::phylayer::phy_receiver::make</definition>
+        <argsstring>()</argsstring>
+        <name>make</name>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1phylayer_1_1phy__receiver" kindref="compound">phylayer::phy_receiver</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1phylayer_1_1phy__receiver" kindref="compound">phylayer::phy_receiver</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1phylayer_1_1phy__receiver_1a1ce3d36c2277256003211e8563e88300" kindref="member">phylayer::phy_receiver::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-phylayer/include/phylayer/phy_receiver.h" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>block</label>
+      </node>
+      <node id="2">
+        <label>gr::phylayer::phy_receiver_impl</label>
+        <link refid="classgr_1_1phylayer_1_1phy__receiver__impl"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="0">
+        <label>gr::phylayer::phy_receiver</label>
+        <link refid="classgr_1_1phylayer_1_1phy__receiver"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>block</label>
+      </node>
+      <node id="3">
+        <label>gr::phylayer::phy_receiver</label>
+        <link refid="classgr_1_1phylayer_1_1phy__receiver"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/zhou/src/gr-phylayer/include/phylayer/phy_receiver.h" line="37" column="1" bodyfile="/home/zhou/src/gr-phylayer/include/phylayer/phy_receiver.h" bodystart="36" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classgr_1_1phylayer_1_1phy__receiver_1a1ce3d36c2277256003211e8563e88300" prot="public" virt="non-virtual"><scope>gr::phylayer::phy_receiver</scope><name>make</name></member>
+      <member refid="classgr_1_1phylayer_1_1phy__receiver_1ad2df6389fd2d809b703df057a9f1ca4b" prot="public" virt="non-virtual"><scope>gr::phylayer::phy_receiver</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -8,6 +8,22 @@
 
 
 
+%feature("docstring") gr::phylayer::phy_receiver "<+description of block+>
+
+Constructor Specific Documentation:
+
+Return a shared_ptr to a new instance of phylayer::phy_receiver.
+
+To avoid accidental use of raw pointers, phylayer::phy_receiver's constructor is in a private implementation class. phylayer::phy_receiver::make is the public interface for creating new instances."
+
+%feature("docstring") gr::phylayer::phy_receiver::make "<+description of block+>
+
+Constructor Specific Documentation:
+
+Return a shared_ptr to a new instance of phylayer::phy_receiver.
+
+To avoid accidental use of raw pointers, phylayer::phy_receiver's constructor is in a private implementation class. phylayer::phy_receiver::make is the public interface for creating new instances."
+
 %feature("docstring") gr::phylayer::phy_transmitter "<+description of block+>
 
 Constructor Specific Documentation:

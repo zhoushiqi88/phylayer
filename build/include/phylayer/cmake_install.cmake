@@ -36,6 +36,7 @@ if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMP
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/phylayer" TYPE FILE FILES
     "/home/zhou/src/gr-phylayer/include/phylayer/api.h"
     "/home/zhou/src/gr-phylayer/include/phylayer/phy_transmitter.h"
+    "/home/zhou/src/gr-phylayer/include/phylayer/phy_receiver.h"
     )
 endif()
 

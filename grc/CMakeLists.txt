@@ -19,5 +19,6 @@
 # Boston, MA 02110-1301, USA.
 
 install(FILES
-    phylayer_phy_transmitter.xml DESTINATION share/gnuradio/grc/blocks
+    phylayer_phy_transmitter.xml
+    phylayer_phy_receiver.xml DESTINATION share/gnuradio/grc/blocks
 )

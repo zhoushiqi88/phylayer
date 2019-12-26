@@ -33,6 +33,9 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES "/home/zhou/src/gr-phylayer/grc/phylayer_phy_transmitter.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES
+    "/home/zhou/src/gr-phylayer/grc/phylayer_phy_transmitter.xml"
+    "/home/zhou/src/gr-phylayer/grc/phylayer_phy_receiver.xml"
+    )
 endif()
 

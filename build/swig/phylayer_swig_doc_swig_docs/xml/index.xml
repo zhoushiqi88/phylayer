@@ -1,5 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classgr_1_1phylayer_1_1phy__receiver" kind="class"><name>gr::phylayer::phy_receiver</name>
+    <member refid="classgr_1_1phylayer_1_1phy__receiver_1ad2df6389fd2d809b703df057a9f1ca4b" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1phylayer_1_1phy__receiver_1a1ce3d36c2277256003211e8563e88300" kind="function"><name>make</name></member>
+  </compound>
   <compound refid="classgr_1_1phylayer_1_1phy__transmitter" kind="class"><name>gr::phylayer::phy_transmitter</name>
     <member refid="classgr_1_1phylayer_1_1phy__transmitter_1ad6f5b116b996069ac523049b83a5070b" kind="typedef"><name>sptr</name></member>
     <member refid="classgr_1_1phylayer_1_1phy__transmitter_1a4a1ce8c5cfa1006199a8495046d5a1c3" kind="function"><name>make</name></member>
@@ -12,6 +16,8 @@
   </compound>
   <compound refid="api_8h" kind="file"><name>api.h</name>
     <member refid="api_8h_1af3921683197daca728f07c65d05a84dc" kind="define"><name>PHYLAYER_API</name></member>
+  </compound>
+  <compound refid="phy__receiver_8h" kind="file"><name>phy_receiver.h</name>
   </compound>
   <compound refid="phy__transmitter_8h" kind="file"><name>phy_transmitter.h</name>
   </compound>

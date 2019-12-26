@@ -3,6 +3,7 @@
   <compounddef id="dir_92b350252c995d378d63300b145b7960" kind="dir">
     <compoundname>phylayer</compoundname>
     <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="phy__receiver_8h">phy_receiver.h</innerfile>
     <innerfile refid="phy__transmitter_8h">phy_transmitter.h</innerfile>
     <briefdescription>
     </briefdescription>

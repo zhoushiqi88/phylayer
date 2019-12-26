@@ -197,6 +197,33 @@ test-phylayer/fast:
 	cd /home/zhou/src/gr-phylayer/build && $(MAKE) -f lib/CMakeFiles/test-phylayer.dir/build.make lib/CMakeFiles/test-phylayer.dir/build
 .PHONY : test-phylayer/fast
 
+phy_receiver_impl.o: phy_receiver_impl.cc.o
+
+.PHONY : phy_receiver_impl.o
+
+# target to build an object file
+phy_receiver_impl.cc.o:
+	cd /home/zhou/src/gr-phylayer/build && $(MAKE) -f lib/CMakeFiles/gnuradio-phylayer.dir/build.make lib/CMakeFiles/gnuradio-phylayer.dir/phy_receiver_impl.cc.o
+.PHONY : phy_receiver_impl.cc.o
+
+phy_receiver_impl.i: phy_receiver_impl.cc.i
+
+.PHONY : phy_receiver_impl.i
+
+# target to preprocess a source file
+phy_receiver_impl.cc.i:
+	cd /home/zhou/src/gr-phylayer/build && $(MAKE) -f lib/CMakeFiles/gnuradio-phylayer.dir/build.make lib/CMakeFiles/gnuradio-phylayer.dir/phy_receiver_impl.cc.i
+.PHONY : phy_receiver_impl.cc.i
+
+phy_receiver_impl.s: phy_receiver_impl.cc.s
+
+.PHONY : phy_receiver_impl.s
+
+# target to generate assembly for a file
+phy_receiver_impl.cc.s:
+	cd /home/zhou/src/gr-phylayer/build && $(MAKE) -f lib/CMakeFiles/gnuradio-phylayer.dir/build.make lib/CMakeFiles/gnuradio-phylayer.dir/phy_receiver_impl.cc.s
+.PHONY : phy_receiver_impl.cc.s
+
 phy_transmitter_impl.o: phy_transmitter_impl.cc.o
 
 .PHONY : phy_transmitter_impl.o
@@ -293,6 +320,9 @@ help:
 	@echo "... test"
 	@echo "... test-phylayer"
 	@echo "... edit_cache"
+	@echo "... phy_receiver_impl.o"
+	@echo "... phy_receiver_impl.i"
+	@echo "... phy_receiver_impl.s"
 	@echo "... phy_transmitter_impl.o"
 	@echo "... phy_transmitter_impl.i"
 	@echo "... phy_transmitter_impl.s"
