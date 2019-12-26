@@ -57,6 +57,14 @@ namespace gr {
     }
 
     void phy_transmitter_impl::handle_fun(pmt::pmt_t msg) {
+      std::string str;
+      str = pmt::symbol_to_string(msg);
+      int len = str.length();
+      std::vector<std::vector<unsigned char>> packets(1,std::vector<unsigned char>(len));
+      memcpy(&packets[0][0],&str[0],len);
+      fun::Rate phy_rate = fun::RATE_1_2_BPSK;
+      tx.send_frame(packets[0],phy_rate);
+
       std::cout << "handlefun" << std::endl;
 
     }
