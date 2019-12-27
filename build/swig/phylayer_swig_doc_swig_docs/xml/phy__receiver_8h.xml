@@ -5,24 +5,24 @@
     <includes refid="api_8h" local="no">phylayer/api.h</includes>
     <includes local="no">gnuradio/block.h</includes>
     <incdepgraph>
-      <node id="5">
+      <node id="11">
         <label>phy_receiver.h</label>
         <link refid="phy_receiver.h"/>
-        <childnode refid="6" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
-      <node id="7">
+      <node id="13">
         <label>gnuradio/attributes.h</label>
       </node>
-      <node id="8">
+      <node id="14">
         <label>gnuradio/block.h</label>
       </node>
-      <node id="6">
+      <node id="12">
         <label>phylayer/api.h</label>
         <link refid="api_8h"/>
-        <childnode refid="7" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -61,15 +61,15 @@
 <codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="api_8h" kindref="compound">phylayer/api.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gnuradio/block.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28" refid="namespacegr" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegr" kindref="compound">gr</ref><sp/>{</highlight></codeline>
-<codeline lineno="29" refid="namespacegr_1_1phylayer" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">phylayer<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegr" kindref="compound">gr</ref><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">phylayer<sp/>{</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
 <codeline lineno="36" refid="classgr_1_1phylayer_1_1phy__receiver" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="api_8h_1af3921683197daca728f07c65d05a84dc" kindref="member">PHYLAYER_API</ref><sp/><ref refid="classgr_1_1phylayer_1_1phy__receiver" kindref="compound">phy_receiver</ref><sp/>:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr::block</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="39" refid="classgr_1_1phylayer_1_1phy__receiver_1ad2df6389fd2d809b703df057a9f1ca4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;phy_receiver&gt;<sp/><ref refid="classgr_1_1phylayer_1_1phy__receiver_1ad2df6389fd2d809b703df057a9f1ca4b" kindref="member">sptr</ref>;</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>sptr<sp/>make();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>sptr<sp/>make(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>freq,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sample_rate,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rx_gain);</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>phylayer</highlight><highlight class="normal"></highlight></codeline>

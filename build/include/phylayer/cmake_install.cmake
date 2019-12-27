@@ -37,6 +37,7 @@ if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMP
     "/home/zhou/src/gr-phylayer/include/phylayer/api.h"
     "/home/zhou/src/gr-phylayer/include/phylayer/phy_transmitter.h"
     "/home/zhou/src/gr-phylayer/include/phylayer/phy_receiver.h"
+    "/home/zhou/src/gr-phylayer/include/phylayer/oncemsg.h"
     )
 endif()
 

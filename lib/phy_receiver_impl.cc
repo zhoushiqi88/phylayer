@@ -29,19 +29,20 @@ namespace gr {
   namespace phylayer {
 
     phy_receiver::sptr
-    phy_receiver::make()
+    phy_receiver::make(double freq,double sample_rate,double rx_gain)
     {
       return gnuradio::get_initial_sptr
-        (new phy_receiver_impl());
+        (new phy_receiver_impl(freq,sample_rate,rx_gain));
     }
 
     /*
      * The private constructor
      */
-    phy_receiver_impl::phy_receiver_impl()
+    phy_receiver_impl::phy_receiver_impl(double freq,double sample_rate,double rx_gain)
       : gr::block("phy_receiver",
               gr::io_signature::make(0,0,0),
-              gr::io_signature::make(0,0,0))
+              gr::io_signature::make(0,0,0)),
+              _freq(freq),_sample_rate(sample_rate),_rx_gain(rx_gain)          
     {
       message_port_register_in(pmt::mp("in"));
       message_port_register_out(pmt::mp("out"));
@@ -58,7 +59,6 @@ namespace gr {
 
     
     void phy_receiver_impl::handle_fun(pmt::pmt_t msg) {
-      std::cout << "dddd" << std::endl;
       auto funcal = boost::bind(&phy_receiver_impl::process_packets_callback,this,_1);
       fun::receiver rx(funcal,5.72e9,5e6,30,"");
       getchar();
@@ -70,16 +70,13 @@ namespace gr {
     {
 
         int rx_count = packets.size();
-        char re[50];
         for(int i = 0;i < rx_count;i++) {
-          memcpy(&re,&packets[i][0],packets[i].size());
-          std::string str(re[0],re[packets[i].size()-1]);
+          int len = packets[i].size();
+          std::cout << len << std::endl; 
+          std::string str(len,'x');
+          memcpy(&str[0],&packets[i][0],len);
           pmt::pmt_t sd = pmt::string_to_symbol(str);
           message_port_pub(pmt::mp("out"),sd);
-        }
-        if(packets.size() > 0)
-        {
-            std::cout << "Received " << " packets at " << std::endl;
         }
 
     }

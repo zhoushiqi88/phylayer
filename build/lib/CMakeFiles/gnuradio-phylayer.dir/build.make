@@ -105,23 +105,49 @@ lib/CMakeFiles/gnuradio-phylayer.dir/phy_receiver_impl.cc.o.provides: lib/CMakeF
 lib/CMakeFiles/gnuradio-phylayer.dir/phy_receiver_impl.cc.o.provides.build: lib/CMakeFiles/gnuradio-phylayer.dir/phy_receiver_impl.cc.o
 
 
+lib/CMakeFiles/gnuradio-phylayer.dir/oncemsg_impl.cc.o: lib/CMakeFiles/gnuradio-phylayer.dir/flags.make
+lib/CMakeFiles/gnuradio-phylayer.dir/oncemsg_impl.cc.o: ../lib/oncemsg_impl.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhou/src/gr-phylayer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/CMakeFiles/gnuradio-phylayer.dir/oncemsg_impl.cc.o"
+	cd /home/zhou/src/gr-phylayer/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-phylayer.dir/oncemsg_impl.cc.o -c /home/zhou/src/gr-phylayer/lib/oncemsg_impl.cc
+
+lib/CMakeFiles/gnuradio-phylayer.dir/oncemsg_impl.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-phylayer.dir/oncemsg_impl.cc.i"
+	cd /home/zhou/src/gr-phylayer/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhou/src/gr-phylayer/lib/oncemsg_impl.cc > CMakeFiles/gnuradio-phylayer.dir/oncemsg_impl.cc.i
+
+lib/CMakeFiles/gnuradio-phylayer.dir/oncemsg_impl.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-phylayer.dir/oncemsg_impl.cc.s"
+	cd /home/zhou/src/gr-phylayer/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhou/src/gr-phylayer/lib/oncemsg_impl.cc -o CMakeFiles/gnuradio-phylayer.dir/oncemsg_impl.cc.s
+
+lib/CMakeFiles/gnuradio-phylayer.dir/oncemsg_impl.cc.o.requires:
+
+.PHONY : lib/CMakeFiles/gnuradio-phylayer.dir/oncemsg_impl.cc.o.requires
+
+lib/CMakeFiles/gnuradio-phylayer.dir/oncemsg_impl.cc.o.provides: lib/CMakeFiles/gnuradio-phylayer.dir/oncemsg_impl.cc.o.requires
+	$(MAKE) -f lib/CMakeFiles/gnuradio-phylayer.dir/build.make lib/CMakeFiles/gnuradio-phylayer.dir/oncemsg_impl.cc.o.provides.build
+.PHONY : lib/CMakeFiles/gnuradio-phylayer.dir/oncemsg_impl.cc.o.provides
+
+lib/CMakeFiles/gnuradio-phylayer.dir/oncemsg_impl.cc.o.provides.build: lib/CMakeFiles/gnuradio-phylayer.dir/oncemsg_impl.cc.o
+
+
 # Object files for target gnuradio-phylayer
 gnuradio__phylayer_OBJECTS = \
 "CMakeFiles/gnuradio-phylayer.dir/phy_transmitter_impl.cc.o" \
-"CMakeFiles/gnuradio-phylayer.dir/phy_receiver_impl.cc.o"
+"CMakeFiles/gnuradio-phylayer.dir/phy_receiver_impl.cc.o" \
+"CMakeFiles/gnuradio-phylayer.dir/oncemsg_impl.cc.o"
 
 # External object files for target gnuradio-phylayer
 gnuradio__phylayer_EXTERNAL_OBJECTS =
 
 lib/libgnuradio-phylayer-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-phylayer.dir/phy_transmitter_impl.cc.o
 lib/libgnuradio-phylayer-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-phylayer.dir/phy_receiver_impl.cc.o
+lib/libgnuradio-phylayer-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-phylayer.dir/oncemsg_impl.cc.o
 lib/libgnuradio-phylayer-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-phylayer.dir/build.make
 lib/libgnuradio-phylayer-1.0.0git.so.0.0.0: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 lib/libgnuradio-phylayer-1.0.0git.so.0.0.0: /usr/lib/x86_64-linux-gnu/libboost_system.so
 lib/libgnuradio-phylayer-1.0.0git.so.0.0.0: /usr/local/lib/libgnuradio-runtime.so
 lib/libgnuradio-phylayer-1.0.0git.so.0.0.0: /usr/local/lib/libgnuradio-pmt.so
 lib/libgnuradio-phylayer-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-phylayer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhou/src/gr-phylayer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libgnuradio-phylayer-1.0.0git.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhou/src/gr-phylayer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libgnuradio-phylayer-1.0.0git.so"
 	cd /home/zhou/src/gr-phylayer/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gnuradio-phylayer.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/zhou/src/gr-phylayer/build/lib && $(CMAKE_COMMAND) -E cmake_symlink_library libgnuradio-phylayer-1.0.0git.so.0.0.0 libgnuradio-phylayer-1.0.0git.so.0.0.0 libgnuradio-phylayer-1.0.0git.so
 	cd /home/zhou/src/gr-phylayer/build/lib && /usr/local/bin/cmake -E create_symlink libgnuradio-phylayer-1.0.0git.so.0.0.0 /home/zhou/src/gr-phylayer/build/lib/libgnuradio-phylayer.so
@@ -138,6 +164,7 @@ lib/CMakeFiles/gnuradio-phylayer.dir/build: lib/libgnuradio-phylayer-1.0.0git.so
 
 lib/CMakeFiles/gnuradio-phylayer.dir/requires: lib/CMakeFiles/gnuradio-phylayer.dir/phy_transmitter_impl.cc.o.requires
 lib/CMakeFiles/gnuradio-phylayer.dir/requires: lib/CMakeFiles/gnuradio-phylayer.dir/phy_receiver_impl.cc.o.requires
+lib/CMakeFiles/gnuradio-phylayer.dir/requires: lib/CMakeFiles/gnuradio-phylayer.dir/oncemsg_impl.cc.o.requires
 
 .PHONY : lib/CMakeFiles/gnuradio-phylayer.dir/requires
 

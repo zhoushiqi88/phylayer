@@ -71,12 +71,14 @@ Inheritance diagram for gr::phylayer::phy_receiver_impl:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaa7e3f9a61c51a42208d1d8bf1236276"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1phylayer_1_1phy__receiver__impl.html#aaa7e3f9a61c51a42208d1d8bf1236276">phy_receiver_impl</a> ()</td></tr>
-<tr class="separator:aaa7e3f9a61c51a42208d1d8bf1236276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab30e3eaf77512218b06c7ec7676a6dba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1phylayer_1_1phy__receiver__impl.html#ab30e3eaf77512218b06c7ec7676a6dba">phy_receiver_impl</a> (double freq, double sample_rate, double rx_gain)</td></tr>
+<tr class="separator:ab30e3eaf77512218b06c7ec7676a6dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e66fe5bb613e34b54c1cc86051e6e94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1phylayer_1_1phy__receiver__impl.html#a6e66fe5bb613e34b54c1cc86051e6e94">~phy_receiver_impl</a> ()</td></tr>
 <tr class="separator:a6e66fe5bb613e34b54c1cc86051e6e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a596d13ba89fe86f5e098faf571d2889f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1phylayer_1_1phy__receiver__impl.html#a596d13ba89fe86f5e098faf571d2889f">handle_fun</a> (pmt::pmt_t msg)</td></tr>
 <tr class="separator:a596d13ba89fe86f5e098faf571d2889f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e8fbc8a111f4e9170f591866797391c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1phylayer_1_1phy__receiver__impl.html#a5e8fbc8a111f4e9170f591866797391c">process_packets_callback</a> (std::vector&lt; std::vector&lt; unsigned char &gt; &gt; packets)</td></tr>
+<tr class="separator:a5e8fbc8a111f4e9170f591866797391c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -84,20 +86,37 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ad2df6389fd2d809b703df057a9f1ca4b inherit pub_types_classgr_1_1phylayer_1_1phy__receiver"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classgr_1_1phylayer_1_1phy__receiver.html">phy_receiver</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1phylayer_1_1phy__receiver.html#ad2df6389fd2d809b703df057a9f1ca4b">sptr</a></td></tr>
 <tr class="separator:ad2df6389fd2d809b703df057a9f1ca4b inherit pub_types_classgr_1_1phylayer_1_1phy__receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classgr_1_1phylayer_1_1phy__receiver"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classgr_1_1phylayer_1_1phy__receiver')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classgr_1_1phylayer_1_1phy__receiver.html">gr::phylayer::phy_receiver</a></td></tr>
-<tr class="memitem:a1ce3d36c2277256003211e8563e88300 inherit pub_static_methods_classgr_1_1phylayer_1_1phy__receiver"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1phylayer_1_1phy__receiver.html#ad2df6389fd2d809b703df057a9f1ca4b">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1phylayer_1_1phy__receiver.html#a1ce3d36c2277256003211e8563e88300">make</a> ()</td></tr>
-<tr class="memdesc:a1ce3d36c2277256003211e8563e88300 inherit pub_static_methods_classgr_1_1phylayer_1_1phy__receiver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1phylayer_1_1phy__receiver.html" title="&lt;+description of block+&gt; ">phylayer::phy_receiver</a>.  <a href="#a1ce3d36c2277256003211e8563e88300">More...</a><br /></td></tr>
-<tr class="separator:a1ce3d36c2277256003211e8563e88300 inherit pub_static_methods_classgr_1_1phylayer_1_1phy__receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49b655ca71d2430a01e97a6c52651bc5 inherit pub_static_methods_classgr_1_1phylayer_1_1phy__receiver"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1phylayer_1_1phy__receiver.html#ad2df6389fd2d809b703df057a9f1ca4b">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1phylayer_1_1phy__receiver.html#a49b655ca71d2430a01e97a6c52651bc5">make</a> (double freq, double sample_rate, double rx_gain)</td></tr>
+<tr class="memdesc:a49b655ca71d2430a01e97a6c52651bc5 inherit pub_static_methods_classgr_1_1phylayer_1_1phy__receiver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1phylayer_1_1phy__receiver.html" title="&lt;+description of block+&gt; ">phylayer::phy_receiver</a>.  <a href="#a49b655ca71d2430a01e97a6c52651bc5">More...</a><br /></td></tr>
+<tr class="separator:a49b655ca71d2430a01e97a6c52651bc5 inherit pub_static_methods_classgr_1_1phylayer_1_1phy__receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aaa7e3f9a61c51a42208d1d8bf1236276"></a>
+<a class="anchor" id="ab30e3eaf77512218b06c7ec7676a6dba"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">gr::phylayer::phy_receiver_impl::phy_receiver_impl </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>freq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sample_rate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>rx_gain</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -129,6 +148,22 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype">pmt::pmt_t&#160;</td>
           <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5e8fbc8a111f4e9170f591866797391c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gr::phylayer::phy_receiver_impl::process_packets_callback </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; unsigned char &gt; &gt;&#160;</td>
+          <td class="paramname"><em>packets</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

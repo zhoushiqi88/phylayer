@@ -35,6 +35,7 @@ link_directories(
 list(APPEND phylayer_sources
     phy_transmitter_impl.cc
     phy_receiver_impl.cc
+    oncemsg_impl.cc
 )
 
 set(phylayer_sources "${phylayer_sources}" PARENT_SCOPE)

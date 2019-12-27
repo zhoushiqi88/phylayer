@@ -20,5 +20,6 @@
 
 install(FILES
     phylayer_phy_transmitter.xml
-    phylayer_phy_receiver.xml DESTINATION share/gnuradio/grc/blocks
+    phylayer_phy_receiver.xml
+    phylayer_oncemsg.xml DESTINATION share/gnuradio/grc/blocks
 )

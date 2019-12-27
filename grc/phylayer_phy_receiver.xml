@@ -4,17 +4,29 @@
   <key>phylayer_phy_receiver</key>
   <category>[phylayer]</category>
   <import>import phylayer</import>
-  <make>phylayer.phy_receiver()</make>
+  <make>phylayer.phy_receiver($freq,$sample_rate,$rx_gain)</make>
   <!-- Make one 'param' node for every Parameter you want settable from the GUI.
        Sub-nodes:
        * name
        * key (makes the value accessible as $keyname, e.g. in the make node)
-       * type 
+       * type -->
   <param>
-    <name>...</name>
-    <key>...</key>
-    <type>...</type>
-  </param> -->
+    <name>FREQ</name>
+    <key>freq</key>
+    <type>real</type>
+  </param>
+
+  <param>
+    <name>SAMPLE_RATE</name>
+    <key>sample_rate</key>
+    <type>real</type>
+  </param>
+
+  <param>
+    <name>RX_GAIN</name>
+    <key>rx_gain</key>
+    <type>real</type>
+  </param>
 
   <!-- Make one 'sink' node per input. Sub-nodes:
        * name (an identifier for the GUI)

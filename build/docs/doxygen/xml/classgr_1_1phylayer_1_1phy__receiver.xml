@@ -21,15 +21,27 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="classgr_1_1phylayer_1_1phy__receiver_1a1ce3d36c2277256003211e8563e88300" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classgr_1_1phylayer_1_1phy__receiver_1a49b655ca71d2430a01e97a6c52651bc5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classgr_1_1phylayer_1_1phy__receiver_1ad2df6389fd2d809b703df057a9f1ca4b" kindref="member">sptr</ref></type>
         <definition>static sptr gr::phylayer::phy_receiver::make</definition>
-        <argsstring>()</argsstring>
+        <argsstring>(double freq, double sample_rate, double rx_gain)</argsstring>
         <name>make</name>
+        <param>
+          <type>double</type>
+          <declname>freq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sample_rate</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rx_gain</declname>
+        </param>
         <briefdescription>
 <para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1phylayer_1_1phy__receiver" kindref="compound">phylayer::phy_receiver</ref>. </para>        </briefdescription>
         <detaileddescription>
-<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1phylayer_1_1phy__receiver" kindref="compound">phylayer::phy_receiver</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1phylayer_1_1phy__receiver_1a1ce3d36c2277256003211e8563e88300" kindref="member">phylayer::phy_receiver::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1phylayer_1_1phy__receiver" kindref="compound">phylayer::phy_receiver</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1phylayer_1_1phy__receiver_1a49b655ca71d2430a01e97a6c52651bc5" kindref="member">phylayer::phy_receiver::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/home/zhou/src/gr-phylayer/include/phylayer/phy_receiver.h" line="49" column="1"/>
@@ -40,36 +52,36 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1">
+      <node id="12">
         <label>block</label>
       </node>
-      <node id="2">
+      <node id="13">
         <label>gr::phylayer::phy_receiver_impl</label>
         <link refid="classgr_1_1phylayer_1_1phy__receiver__impl"/>
-        <childnode refid="0" relation="public-inheritance">
+        <childnode refid="11" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="0">
+      <node id="11">
         <label>gr::phylayer::phy_receiver</label>
         <link refid="classgr_1_1phylayer_1_1phy__receiver"/>
-        <childnode refid="1" relation="public-inheritance">
+        <childnode refid="12" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="4">
+      <node id="15">
         <label>block</label>
       </node>
-      <node id="3">
+      <node id="14">
         <label>gr::phylayer::phy_receiver</label>
         <link refid="classgr_1_1phylayer_1_1phy__receiver"/>
-        <childnode refid="4" relation="public-inheritance">
+        <childnode refid="15" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
     <location file="/home/zhou/src/gr-phylayer/include/phylayer/phy_receiver.h" line="37" column="1" bodyfile="/home/zhou/src/gr-phylayer/include/phylayer/phy_receiver.h" bodystart="36" bodyend="50"/>
     <listofallmembers>
-      <member refid="classgr_1_1phylayer_1_1phy__receiver_1a1ce3d36c2277256003211e8563e88300" prot="public" virt="non-virtual"><scope>gr::phylayer::phy_receiver</scope><name>make</name></member>
+      <member refid="classgr_1_1phylayer_1_1phy__receiver_1a49b655ca71d2430a01e97a6c52651bc5" prot="public" virt="non-virtual"><scope>gr::phylayer::phy_receiver</scope><name>make</name></member>
       <member refid="classgr_1_1phylayer_1_1phy__receiver_1ad2df6389fd2d809b703df057a9f1ca4b" prot="public" virt="non-virtual"><scope>gr::phylayer::phy_receiver</scope><name>sptr</name></member>
     </listofallmembers>
   </compounddef>

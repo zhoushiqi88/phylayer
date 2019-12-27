@@ -31,9 +31,12 @@ namespace gr {
     {
      private:
       // Nothing to declare in this block.
+      double _freq;
+      double _sample_rate;
+      double _rx_gain;
 
      public:
-      phy_receiver_impl();
+      phy_receiver_impl(double freq,double sample_rate,double rx_gain);
       ~phy_receiver_impl();
 
       // Where all the action really happens

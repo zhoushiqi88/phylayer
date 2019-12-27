@@ -52,30 +52,30 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="13">
+      <node id="24">
         <label>gr::phylayer::phy_transmitter_impl</label>
         <link refid="classgr_1_1phylayer_1_1phy__transmitter__impl"/>
-        <childnode refid="11" relation="public-inheritance">
+        <childnode refid="22" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11">
+      <node id="22">
         <label>gr::phylayer::phy_transmitter</label>
         <link refid="classgr_1_1phylayer_1_1phy__transmitter"/>
-        <childnode refid="12" relation="public-inheritance">
+        <childnode refid="23" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12">
+      <node id="23">
         <label>gr::block</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="14">
+      <node id="25">
         <label>gr::phylayer::phy_transmitter</label>
         <link refid="classgr_1_1phylayer_1_1phy__transmitter"/>
-        <childnode refid="15" relation="public-inheritance">
+        <childnode refid="26" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15">
+      <node id="26">
         <label>gr::block</label>
       </node>
     </collaborationgraph>
